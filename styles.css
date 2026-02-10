@@ -1,0 +1,207 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Theme Variables */
+:root {
+    --primary-color: #4a6fa5;   /* soft blue */
+    --secondary-color: #6b5ca5; /* muted purple */
+    --background-color: #f7f2f8;
+    --section-bg: #ffffff;
+    --text-color: #333;
+    --nav-text-color: #ffffff;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: 80px;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+/* Navigation List */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Items */
+.nav-links li {
+    margin: 0 20px;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Section Wrapper */
+.section {
+    padding: 80px 0;
+    background-color: var(--section-bg);
+    margin-bottom: 12px;
+}
+
+/* Container */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Profile Section */
+#profile {
+    background: linear-gradient(
+        180deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color: white;
+
+}
+
+/* Profile Image */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+/* Profile Text */
+#profile h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    text-align: left;
+}
+
+/* Headings */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Coursework Section */
+.course-category {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color: white;
+}
+
+/* Assignment Grid */
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Assignment Boxes */
+.assignment-box {
+    color: black;
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* INTERESTS */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.interest-box {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.interest-box h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* EDUCATION SUB-SECTIONS */
+.education-sub {
+    background: #f5f3ff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.education-sub h4 {
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+/* BUTTON LINK STYLE */
+.button-link {
+  display: inline-block; 
+  padding: 10px 20px;   
+  background-color: var(--secondary-color); 
+  color: white;         
+  text-align: center;   
+  text-decoration: none; 
+  border-radius: 5px;   
+  cursor: pointer;      
+  border: 1px solid #0056b3; 
+}
+
+/* BUTTON LINK HOVER EFFECT */
+.button-link:hover {
+  background-color:#0056b3; 
+;
+}
